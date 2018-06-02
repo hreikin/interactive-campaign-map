@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <!-- Page Title -->
+    <title>Campaign Map Demo</title>
+    
+    <!-- Link to leaflet.css stylesheet, we use version 0.7.7 as some major changes were introduced from version 1.0.0 onwards which cause compatibility issues. -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@0.7.7/dist/leaflet.css"/>
+
+    <!-- Styling applied to the HTML element which displays the interactive map. Width and Height MUST be defined for the map to display correctly. -->
+    <style type="text/css">
+        html, body, #mapid {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <!-- The HTML element which holds the interactive map. The id attribute MUST be defined. -->
+    <div id="mapid"></div>
+
+    <!-- Link to leaflet.js file, we use version 0.7.7 as some major changes were introduced from version 1.0.0 onwards which cause compatibility issues. -->
+    <script src="https://unpkg.com/leaflet@0.7.7/dist/leaflet.js"></script>
+    
+    <!-- Link to L.TileLayer.Zoomify.js file.-->
+    <script type="text/javascript" src="https://viewing-gallery.co.uk/maps/L.TileLayer.Zoomify.js"></script>  
+    
+    <!-- Link to JS file with our code for displaying the interactive map. -->
+    <script type="text/javascript" src="sumptown-campaign.js"></script>
+  
+</body>
+</html>
