@@ -90,7 +90,7 @@ var turquoisePlayerStage01Battle01 = L.marker([75.5, -141.5], {icon: battleIcon}
 var turquoisePlayerStage01Battle02 = L.marker([75.5, -128.5], {icon: battleIcon}).bindPopup(turquoisePlayerStage01Battle02Popup);
 
 // Creates a group of stage 01 battle markers to be added to layer control later.
-var playersStage01 = L.layerGroup([redPlayerStage01Battle01, redPlayerStage01Battle02, lightGreenPlayerStage01Battle01, yellowPlayerStage01Battle01, yellowPlayerStage01Battle02, bluePlayerStage01Battle01, orangePlayerStage01Battle01, purplePlayerStage01Battle01, purplePlayerStage01Battle02, greenPlayerStage01Battle01, darkBluePlayerStage01Battle01, lightBluePlayerStage01Battle01, turquoisePlayerStage01Battle01, turquoisePlayerStage01Battle02]);
+var battlesStage01 = L.layerGroup([redPlayerStage01Battle01, redPlayerStage01Battle02, lightGreenPlayerStage01Battle01, yellowPlayerStage01Battle01, yellowPlayerStage01Battle02, bluePlayerStage01Battle01, orangePlayerStage01Battle01, purplePlayerStage01Battle01, purplePlayerStage01Battle02, greenPlayerStage01Battle01, darkBluePlayerStage01Battle01, lightBluePlayerStage01Battle01, turquoisePlayerStage01Battle01, turquoisePlayerStage01Battle02]);
 
 // Creates the stage 02 battle markers, sets the latitude and longitude. Passes options for custom icon and custom popup values.
 var redPlayerStage02Battle01 = L.marker([84.6, -139.5], {icon: battleIcon}).bindPopup(redPlayerStage02Battle01Popup);
@@ -106,14 +106,14 @@ var lightBluePlayerStage02Battle02 = L.marker([71.9, -90.0], {icon: battleIcon})
 var turquoisePlayerStage02Battle01 = L.marker([76.5, -111.5], {icon: battleIcon}).bindPopup(turquoisePlayerStage02Battle01Popup);
 
 // Creates a group of stage 02 battle markers to be added to layer control later.
-var playersStage02 = L.layerGroup([redPlayerStage02Battle01, lightGreenPlayerStage02Battle01, yellowPlayerStage02Battle01, bluePlayerStage02Battle01, orangePlayerStage02Battle01, purplePlayerStage02Battle01, greenPlayerStage02Battle01, darkBluePlayerStage02Battle01, lightBluePlayerStage02Battle01, lightBluePlayerStage02Battle02, turquoisePlayerStage02Battle01]);
+var battlesStage02 = L.layerGroup([redPlayerStage02Battle01, lightGreenPlayerStage02Battle01, yellowPlayerStage02Battle01, bluePlayerStage02Battle01, orangePlayerStage02Battle01, purplePlayerStage02Battle01, greenPlayerStage02Battle01, darkBluePlayerStage02Battle01, lightBluePlayerStage02Battle01, lightBluePlayerStage02Battle02, turquoisePlayerStage02Battle01]);
 
 //Creates the switchable map layers. Change the URL to reflect where you are hosting your map tiles. Width and Height of original image MUST be defined.
 var start = L.tileLayer.zoomify('https://hreikin.co.uk/interactive-campaign-map/interactive-campaign-map-start/', {
     width: 8318, 
     height: 3640, 
     tolerance: 0.9, 
-    layers: [stage01, stage02, players, playersStage01, playersStage02],                                //Layers to include in layers control, initial map should NOT be included as it will be added automatically.
+    layers: [stage01, stage02, players, battlesStage01, battlesStage02],                                //Layers to include in layers control, initial map should NOT be included as it will be added automatically.
     attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Change this value to whatever you like.
     }).addTo(map),
 
@@ -121,7 +121,7 @@ var start = L.tileLayer.zoomify('https://hreikin.co.uk/interactive-campaign-map/
     width: 8318, 
     height: 3640, 
     tolerance: 0.9, 
-    layers: [stage01, stage02, players, playersStage01, playersStage02],                                //Layers to include in layers control, initial map should NOT be included as it will be added automatically.
+    layers: [stage01, stage02, players, battlesStage01, battlesStage02],                                //Layers to include in layers control, initial map should NOT be included as it will be added automatically.
     attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Change this value to whatever you like.
     }),
 
@@ -129,7 +129,7 @@ var start = L.tileLayer.zoomify('https://hreikin.co.uk/interactive-campaign-map/
     width: 8318, 
     height: 3640, 
     tolerance: 0.9, 
-    layers: [stage01, stage02, players, playersStage01, playersStage02],                                //Layers to include in layers control, initial map should NOT be included as it will be added automatically.
+    layers: [stage01, stage02, players, battlesStage01, battlesStage02],                                //Layers to include in layers control, initial map should NOT be included as it will be added automatically.
     attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Change this value to whatever you like.
     });
 
@@ -143,8 +143,8 @@ var baseMaps = {
 // Creates overlayMaps layer and passes which marker groups to include in the layers control.
 var overlayMaps = {
     "Players": players,
-    "Stage 1 Battles": playersStage01,
-    "Stage 2 Battles": playersStage02
+    "Stage 1 Battles": battlesStage01,
+    "Stage 2 Battles": battlesStage02
     };
 
 // Creates a switchable layers control from baseMaps and overlayMaps and adds them to map.
