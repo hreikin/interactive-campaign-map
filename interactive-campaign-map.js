@@ -133,14 +133,14 @@ var start = L.tileLayer.zoomify('https://hreikin.co.uk/interactive-campaign-map/
     attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Change this value to whatever you like.
     });
 
-// Creates baseMaps layer and passes which maps to include in the layer.
+// Creates baseMaps layer and passes which maps to include in the layers control.
 var baseMaps = {
     "Campaign Start": start,
     "Campaign Stage 01": stage01,
     "Campaign Stage 02": stage02
 };
 
-// Creates overlayMaps layer and passes which marker groups to include in the layer.
+// Creates overlayMaps layer and passes which marker groups to include in the layers control.
 var overlayMaps = {
     "Players": players,
     "Stage 1 Battles": playersStage01,
