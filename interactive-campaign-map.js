@@ -1,5 +1,5 @@
         var map = L.map('mapid').setView(new L.LatLng(0,0), 0);
-            L.tileLayer.zoomify('https://viewing-gallery.co.uk/maps/sumptown-campaign-start/', { 
+            L.tileLayer.zoomify('https://hreikin.co.uk/interactive-campaign-map/interactive-campaign-map-start/', { 
                 width: 8318, 
                 height: 3640,          
             });
@@ -119,28 +119,28 @@
 
 
 
-        var start = L.tileLayer.zoomify('https://viewing-gallery.co.uk/maps/sumptown-campaign-start/', {
+        var start = L.tileLayer.zoomify('https://hreikin.co.uk/interactive-campaign-map/interactive-campaign-map-start/', {
             width: 8318, 
             height: 3640, 
             tolerance: 0.9, 
             layers: [stage01, stage02, players, playersstage01, playersstage02], 
-            attribution: 'Map by <a href="https://codingpen.co.uk" target="_blank" alt="CodingPen">CodingPen</a>'
+            attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'
             }).addTo(map),
 
-            stage01 = L.tileLayer.zoomify('https://viewing-gallery.co.uk/maps/sumptown-campaign-stage-01/', {
+            stage01 = L.tileLayer.zoomify('https://hreikin.co.uk/interactive-campaign-map/interactive-campaign-map-stage-01/', {
             width: 8318, 
             height: 3640, 
             tolerance: 0.9, 
             layers: [stage01, stage02, players, playersstage01, playersstage02], 
-            attribution: 'Map by <a href="https://codingpen.co.uk" target="_blank" alt="CodingPen">CodingPen</a>'
+            attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'
             }),
 
-            stage02 = L.tileLayer.zoomify('https://viewing-gallery.co.uk/maps/sumptown-campaign-stage-02/', {
+            stage02 = L.tileLayer.zoomify('https://hreikin.co.uk/interactive-campaign-map/interactive-campaign-map-stage-02/', {
             width: 8318, 
             height: 3640, 
             tolerance: 0.9, 
             layers: [stage01, stage02, players, playersstage01, playersstage02], 
-            attribution: 'Map by <a href="https://codingpen.co.uk" target="_blank" alt="CodingPen">CodingPen</a>'
+            attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'
             });
 
         var baseMaps = {
