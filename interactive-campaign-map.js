@@ -18,102 +18,102 @@ var battleIcon = L.icon({
 });
 
 // Create the player popup content. You can change these to include player bios, army lists, etc for each individual player. Accepts HTML content such as images and links.
-var redplayerpopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
-var turquoiseplayerpopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
-var lightgreenplayerpopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
-var yellowplayerpopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
-var blueplayerpopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
-var orangeplayerpopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
-var purpleplayerpopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
-var greenplayerpopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
-var darkblueplayerpopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
-var lightblueplayerpopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
+var redPlayerPopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
+var turquoisePlayerPopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
+var lightgreenPlayerPopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
+var yellowPlayerPopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
+var bluePlayerPopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
+var orangePlayerPopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
+var purplePlayerPopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
+var greenPlayerPopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
+var darkBluePlayerPopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
+var lightBluePlayerPopup = 'Player information can go here, it could include details such as army/gang/faction and a link to their list or roster. The icon can be set to any image, it could be either a profile picture of the player or a recognisable army/gang/faction mark.';
 
 // Stage 01 battles popup content. You can change these to include results, etc for each battle that occurred this stage. Accepts HTML content such as images and links.
-var redplayerstage01battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var redplayerstage01battle02popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var lightgreenplayerstage01battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var yellowplayerstage01battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var yellowplayerstage01battle02popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var blueplayerstage01battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var orangeplayerstage01battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var purpleplayerstage01battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var purpleplayerstage01battle02popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var greenplayerstage01battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var darkblueplayerstage01battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var lightblueplayerstage01battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var turquoiseplayerstage01battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var turquoiseplayerstage01battle02popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var redPlayerStage01Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var redPlayerStage01Battle02Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var lightGreenPlayerStage01Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var yellowPlayerStage01Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var yellowPlayerStage01Battle02Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var bluePlayerStage01Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var orangePlayerStage01Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var purplePlayerStage01Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var purplePlayerStage01Battle02Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var greenPlayerStage01Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var darkBluePlayerStage01Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var lightBluePlayerStage01Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var turquoisePlayerStage01Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var turquoisePlayerStage01Battle02Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
 
 // Stage 02 battles popup content. You can change these to include results, etc for each battle that occurred this stage. Accepts HTML content such as images and links.
-var redplayerstage02battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var lightgreenplayerstage02battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var yellowplayerstage02battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var blueplayerstage02battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var orangeplayerstage02battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var purpleplayerstage02battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var greenplayerstage02battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var darkblueplayerstage02battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var lightblueplayerstage02battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var lightblueplayerstage02battle02popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
-var turquoiseplayerstage02battle01popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var redPlayerStage02Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var lightGreenPlayerStage02Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var yellowPlayerStage02Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var bluePlayerStage02Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var orangePlayerStage02Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var purplePlayerStage02Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var greenPlayerStage02Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var darkBluePlayerStage02Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var lightBluePlayerStage02Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var lightBluePlayerStage02Battle02Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
+var turquoisePlayerStage02Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
 
 // Creates the player markers, sets the latitude and longitude. Passes options for custom icon and custom popup values.
-var redplayer = L.marker([83.8, -165.5], {icon: playerIcon}).bindPopup(redplayerpopup);
-var lightgreenplayer = L.marker([81.5, -134.5], {icon: playerIcon}).bindPopup(lightgreenplayerpopup);
-var yellowplayer = L.marker([80.5, -94.5], {icon: playerIcon}).bindPopup(yellowplayerpopup);
-var blueplayer = L.marker([82.5, -60.5], {icon: playerIcon}).bindPopup(blueplayerpopup);
-var orangeplayer = L.marker([83.0, -18.0], {icon: playerIcon}).bindPopup(orangeplayerpopup);
-var purpleplayer = L.marker([79.0, -9.0], {icon: playerIcon}).bindPopup(purpleplayerpopup);
-var greenplayer = L.marker([75.8, -44.0], {icon: playerIcon}).bindPopup(greenplayerpopup);
-var darkblueplayer = L.marker([74.9, -77.8], {icon: playerIcon}).bindPopup(darkblueplayerpopup);
-var lightblueplayer = L.marker([73.9, -112.5], {icon: playerIcon}).bindPopup(lightblueplayerpopup);
-var turquoiseplayer = L.marker([75.0, -155.5], {icon: playerIcon}).bindPopup(turquoiseplayerpopup);
+var redPlayer = L.marker([83.8, -165.5], {icon: playerIcon}).bindPopup(redPlayerPopup);
+var lightGreenPlayer = L.marker([81.5, -134.5], {icon: playerIcon}).bindPopup(lightgreenPlayerPopup);
+var yellowPlayer = L.marker([80.5, -94.5], {icon: playerIcon}).bindPopup(yellowPlayerPopup);
+var bluePlayer = L.marker([82.5, -60.5], {icon: playerIcon}).bindPopup(bluePlayerPopup);
+var orangePlayer = L.marker([83.0, -18.0], {icon: playerIcon}).bindPopup(orangePlayerPopup);
+var purplePlayer = L.marker([79.0, -9.0], {icon: playerIcon}).bindPopup(purplePlayerPopup);
+var greenPlayer = L.marker([75.8, -44.0], {icon: playerIcon}).bindPopup(greenPlayerPopup);
+var darkBluePlayer = L.marker([74.9, -77.8], {icon: playerIcon}).bindPopup(darkBluePlayerPopup);
+var lightBluePlayer = L.marker([73.9, -112.5], {icon: playerIcon}).bindPopup(lightBluePlayerPopup);
+var turquoisePlayer = L.marker([75.0, -155.5], {icon: playerIcon}).bindPopup(turquoisePlayerPopup);
 
 // Creates a group of player markers to be added to layer control later. Adds player markers to map.
-var players = L.layerGroup([redplayer, lightgreenplayer, yellowplayer, blueplayer, orangeplayer, purpleplayer, greenplayer, darkblueplayer, lightblueplayer, turquoiseplayer]).addTo(map);
+var players = L.layerGroup([redPlayer, lightGreenPlayer, yellowPlayer, bluePlayer, orangePlayer, purplePlayer, greenPlayer, darkBluePlayer, lightBluePlayer, turquoisePlayer]).addTo(map);
 
 // Creates the stage 01 battle markers, sets the latitude and longitude. Passes options for custom icon and custom popup values.
-var redplayerstage01battle01 = L.marker([84.6, -169.5], {icon: battleIcon}).bindPopup(redplayerstage01battle01popup);
-var redplayerstage01battle02 = L.marker([84.6, -159.5], {icon: battleIcon}).bindPopup(redplayerstage01battle02popup);
-var lightgreenplayerstage01battle01 = L.marker([83.5, -134.5], {icon: battleIcon}).bindPopup(lightgreenplayerstage01battle01popup);
-var yellowplayerstage01battle01 = L.marker([83.5, -89.3], {icon: battleIcon}).bindPopup(yellowplayerstage01battle01popup);
-var yellowplayerstage01battle02 = L.marker([80.5, -85.3], {icon: battleIcon}).bindPopup(yellowplayerstage01battle02popup);
-var blueplayerstage01battle01 = L.marker([82.5, -44.5], {icon: battleIcon}).bindPopup(blueplayerstage01battle01popup);
-var orangeplayerstage01battle01 = L.marker([84.4, -23.0], {icon: battleIcon}).bindPopup(orangeplayerstage01battle01popup);
-var purpleplayerstage01battle01 = L.marker([83.0, -3.0], {icon: battleIcon}).bindPopup(purpleplayerstage01battle01popup);
-var purpleplayerstage01battle02 = L.marker([81.0, -2.0], {icon: battleIcon}).bindPopup(purpleplayerstage01battle02popup);
-var greenplayerstage01battle01 = L.marker([75.8, -30.0], {icon: battleIcon}).bindPopup(greenplayerstage01battle01popup);
-var darkblueplayerstage01battle01 = L.marker([77.9, -75.8], {icon: battleIcon}).bindPopup(darkblueplayerstage01battle01popup);
-var lightblueplayerstage01battle01 = L.marker([70.9, -110.5], {icon: battleIcon}).bindPopup(lightblueplayerstage01battle01popup);
-var turquoiseplayerstage01battle01 = L.marker([75.5, -141.5], {icon: battleIcon}).bindPopup(turquoiseplayerstage01battle01popup);
-var turquoiseplayerstage01battle02 = L.marker([75.5, -128.5], {icon: battleIcon}).bindPopup(turquoiseplayerstage01battle02popup);
+var redPlayerStage01Battle01 = L.marker([84.6, -169.5], {icon: battleIcon}).bindPopup(redPlayerStage01Battle01Popup);
+var redPlayerStage01Battle02 = L.marker([84.6, -159.5], {icon: battleIcon}).bindPopup(redPlayerStage01Battle02Popup);
+var lightGreenPlayerStage01Battle01 = L.marker([83.5, -134.5], {icon: battleIcon}).bindPopup(lightGreenPlayerStage01Battle01Popup);
+var yellowPlayerStage01Battle01 = L.marker([83.5, -89.3], {icon: battleIcon}).bindPopup(yellowPlayerStage01Battle01Popup);
+var yellowPlayerStage01Battle02 = L.marker([80.5, -85.3], {icon: battleIcon}).bindPopup(yellowPlayerStage01Battle02Popup);
+var bluePlayerStage01Battle01 = L.marker([82.5, -44.5], {icon: battleIcon}).bindPopup(bluePlayerStage01Battle01Popup);
+var orangePlayerStage01Battle01 = L.marker([84.4, -23.0], {icon: battleIcon}).bindPopup(orangePlayerStage01Battle01Popup);
+var purplePlayerStage01Battle01 = L.marker([83.0, -3.0], {icon: battleIcon}).bindPopup(purplePlayerStage01Battle01Popup);
+var purplePlayerStage01Battle02 = L.marker([81.0, -2.0], {icon: battleIcon}).bindPopup(purplePlayerStage01Battle02Popup);
+var greenPlayerStage01Battle01 = L.marker([75.8, -30.0], {icon: battleIcon}).bindPopup(greenPlayerStage01Battle01Popup);
+var darkBluePlayerStage01Battle01 = L.marker([77.9, -75.8], {icon: battleIcon}).bindPopup(darkBluePlayerStage01Battle01Popup);
+var lightBluePlayerStage01Battle01 = L.marker([70.9, -110.5], {icon: battleIcon}).bindPopup(lightBluePlayerStage01Battle01Popup);
+var turquoisePlayerStage01Battle01 = L.marker([75.5, -141.5], {icon: battleIcon}).bindPopup(turquoisePlayerStage01Battle01Popup);
+var turquoisePlayerStage01Battle02 = L.marker([75.5, -128.5], {icon: battleIcon}).bindPopup(turquoisePlayerStage01Battle02Popup);
 
 // Creates a group of stage 01 battle markers to be added to layer control later.
-var playersstage01 = L.layerGroup([redplayerstage01battle01, redplayerstage01battle02, lightgreenplayerstage01battle01, yellowplayerstage01battle01, yellowplayerstage01battle02, blueplayerstage01battle01, orangeplayerstage01battle01, purpleplayerstage01battle01, purpleplayerstage01battle02, greenplayerstage01battle01, darkblueplayerstage01battle01, lightblueplayerstage01battle01, turquoiseplayerstage01battle01, turquoiseplayerstage01battle02]);
+var playersStage01 = L.layerGroup([redPlayerStage01Battle01, redPlayerStage01Battle02, lightGreenPlayerStage01Battle01, yellowPlayerStage01Battle01, yellowPlayerStage01Battle02, bluePlayerStage01Battle01, orangePlayerStage01Battle01, purplePlayerStage01Battle01, purplePlayerStage01Battle02, greenPlayerStage01Battle01, darkBluePlayerStage01Battle01, lightBluePlayerStage01Battle01, turquoisePlayerStage01Battle01, turquoisePlayerStage01Battle02]);
 
 // Creates the stage 02 battle markers, sets the latitude and longitude. Passes options for custom icon and custom popup values.
-var redplayerstage02battle01 = L.marker([84.6, -139.5], {icon: battleIcon}).bindPopup(redplayerstage02battle01popup);
-var lightgreenplayerstage02battle01 = L.marker([79.5, -128.5], {icon: battleIcon}).bindPopup(lightgreenplayerstage02battle01popup);
-var yellowplayerstage02battle01 = L.marker([83.0, -99.0], {icon: battleIcon}).bindPopup(yellowplayerstage02battle01popup);
-var blueplayerstage02battle01 = L.marker([81.0, -57.5], {icon: battleIcon}).bindPopup(blueplayerstage02battle01popup);
-var orangeplayerstage02battle01 = L.marker([84.4, -14.0], {icon: battleIcon}).bindPopup(orangeplayerstage02battle01popup);
-var purpleplayerstage02battle01 = L.marker([76.0, -9.0], {icon: battleIcon}).bindPopup(purpleplayerstage02battle01popup);
-var greenplayerstage02battle01 = L.marker([79.8, -30.0], {icon: battleIcon}).bindPopup(greenplayerstage02battle01popup);
-var darkblueplayerstage02battle01 = L.marker([77.9, -86.0], {icon: battleIcon}).bindPopup(darkblueplayerstage02battle01popup);
-var lightblueplayerstage02battle01 = L.marker([77.5, -126.5], {icon: battleIcon}).bindPopup(lightblueplayerstage02battle01popup);
-var lightblueplayerstage02battle02 = L.marker([71.9, -90.0], {icon: battleIcon}).bindPopup(lightblueplayerstage02battle02popup);
-var turquoiseplayerstage02battle01 = L.marker([76.5, -111.5], {icon: battleIcon}).bindPopup(turquoiseplayerstage02battle01popup);
+var redPlayerStage02Battle01 = L.marker([84.6, -139.5], {icon: battleIcon}).bindPopup(redPlayerStage02Battle01Popup);
+var lightGreenPlayerStage02Battle01 = L.marker([79.5, -128.5], {icon: battleIcon}).bindPopup(lightGreenPlayerStage02Battle01Popup);
+var yellowPlayerStage02Battle01 = L.marker([83.0, -99.0], {icon: battleIcon}).bindPopup(yellowPlayerStage02Battle01Popup);
+var bluePlayerStage02Battle01 = L.marker([81.0, -57.5], {icon: battleIcon}).bindPopup(bluePlayerStage02Battle01Popup);
+var orangePlayerStage02Battle01 = L.marker([84.4, -14.0], {icon: battleIcon}).bindPopup(orangePlayerStage02Battle01Popup);
+var purplePlayerStage02Battle01 = L.marker([76.0, -9.0], {icon: battleIcon}).bindPopup(purplePlayerStage02Battle01Popup);
+var greenPlayerStage02Battle01 = L.marker([79.8, -30.0], {icon: battleIcon}).bindPopup(greenPlayerStage02Battle01Popup);
+var darkBluePlayerStage02Battle01 = L.marker([77.9, -86.0], {icon: battleIcon}).bindPopup(darkBluePlayerStage02Battle01Popup);
+var lightBluePlayerStage02Battle01 = L.marker([77.5, -126.5], {icon: battleIcon}).bindPopup(lightBluePlayerStage02Battle01Popup);
+var lightBluePlayerStage02Battle02 = L.marker([71.9, -90.0], {icon: battleIcon}).bindPopup(lightBluePlayerStage02Battle02Popup);
+var turquoisePlayerStage02Battle01 = L.marker([76.5, -111.5], {icon: battleIcon}).bindPopup(turquoisePlayerStage02Battle01Popup);
 
 // Creates a group of stage 02 battle markers to be added to layer control later.
-var playersstage02 = L.layerGroup([redplayerstage02battle01, lightgreenplayerstage02battle01, yellowplayerstage02battle01, blueplayerstage02battle01, orangeplayerstage02battle01, purpleplayerstage02battle01, greenplayerstage02battle01, darkblueplayerstage02battle01, lightblueplayerstage02battle01, lightblueplayerstage02battle02, turquoiseplayerstage02battle01]);
+var playersStage02 = L.layerGroup([redPlayerStage02Battle01, lightGreenPlayerStage02Battle01, yellowPlayerStage02Battle01, bluePlayerStage02Battle01, orangePlayerStage02Battle01, purplePlayerStage02Battle01, greenPlayerStage02Battle01, darkBluePlayerStage02Battle01, lightBluePlayerStage02Battle01, lightBluePlayerStage02Battle02, turquoisePlayerStage02Battle01]);
 
 //Creates the switchable map layers. Change the URL to reflect where you are hosting your map tiles. Width and Height of original image MUST be defined.
 var start = L.tileLayer.zoomify('https://hreikin.co.uk/interactive-campaign-map/interactive-campaign-map-start/', {
     width: 8318, 
     height: 3640, 
     tolerance: 0.9, 
-    layers: [stage01, stage02, players, playersstage01, playersstage02],                                //Layers to include in layers control, initial map should NOT be included as it will be added automatically.
+    layers: [stage01, stage02, players, playersStage01, playersStage02],                                //Layers to include in layers control, initial map should NOT be included as it will be added automatically.
     attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Change this value to whatever you like.
     }).addTo(map),
 
@@ -121,7 +121,7 @@ var start = L.tileLayer.zoomify('https://hreikin.co.uk/interactive-campaign-map/
     width: 8318, 
     height: 3640, 
     tolerance: 0.9, 
-    layers: [stage01, stage02, players, playersstage01, playersstage02],                                //Layers to include in layers control, initial map should NOT be included as it will be added automatically.
+    layers: [stage01, stage02, players, playersStage01, playersStage02],                                //Layers to include in layers control, initial map should NOT be included as it will be added automatically.
     attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Change this value to whatever you like.
     }),
 
@@ -129,7 +129,7 @@ var start = L.tileLayer.zoomify('https://hreikin.co.uk/interactive-campaign-map/
     width: 8318, 
     height: 3640, 
     tolerance: 0.9, 
-    layers: [stage01, stage02, players, playersstage01, playersstage02],                                //Layers to include in layers control, initial map should NOT be included as it will be added automatically.
+    layers: [stage01, stage02, players, playersStage01, playersStage02],                                //Layers to include in layers control, initial map should NOT be included as it will be added automatically.
     attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Change this value to whatever you like.
     });
 
@@ -143,8 +143,8 @@ var baseMaps = {
 // Creates overlayMaps layer and passes which marker groups to include in the layer.
 var overlayMaps = {
     "Players": players,
-    "Stage 1 Battles": playersstage01,
-    "Stage 2 Battles": playersstage02
+    "Stage 1 Battles": playersStage01,
+    "Stage 2 Battles": playersStage02
     };
 
 // Creates a switchable layers control from baseMaps and overlayMaps and adds them to map.
