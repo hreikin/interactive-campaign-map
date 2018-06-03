@@ -9,7 +9,7 @@ The interactive campaign map repository contains a few files and folders which i
 - **interactive-campaign-map.html :** HTML file used to display the interactive campaign map demo.
 - **interactive-campaign-map.js :** Javascript file which contains the code for the interactive campaign map demo.
 - **L.TileLayer.Zoomify.js :** This file allows us to display Zoomify tiles with Leaflet and is originally provided by the repository available here. There have been no changes made to this file and it is only included in this repository to keep things simple and allow the demo map to work ‘out of the box’.
-- **README.md :** The README file of the repository which includes basic instructions to guide you through the process of creating an interactive campaign map.
+- **README.md :** The README file of the repository which includes basic information to guide you through the process of creating an interactive campaign map.
 
 ## How To Guide
 
