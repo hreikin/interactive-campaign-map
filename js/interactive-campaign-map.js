@@ -1,9 +1,15 @@
 //Creates the map, tells it to display in the element with id of 'mapid' and sets the inital latitude, longitude and zoom values. Change the URL to reflect where you are hosting your map tiles. Width and Height of original image MUST be defined.
-var map = L.map('mapid').setView(new L.LatLng(0,0), 0);
-    L.tileLayer.zoomify('https://hreikin.co.uk/interactive-campaign-map/interactive-campaign-map-start/', { 
-        width: 8318, 
-        height: 3640,          
-    });
+var map = L.map('mapid', { 
+    crs: L.CRS.Simple, //Set a flat projection, as we are projecting an image
+});
+
+var layer = L.tileLayer.zoomify('./interactive-campaign-map-start/{g}/{z}-{x}-{y}.jpg', {
+    width: 8318, 
+    height: 3640,
+}).addTo(map);
+
+//Setting the view to our layer bounds, set by our Zoomify plugin
+map.fitBounds(layer.getBounds());
 
 // Create the icon used for the player markers. May be changed to any image you wish.
 var playerIcon = L.icon({
@@ -108,8 +114,10 @@ var turquoisePlayerStage02Battle01 = L.marker([76.5, -111.5], {icon: battleIcon}
 // Creates a group of stage 02 battle markers to be added to layer control later.
 var battlesStage02 = L.layerGroup([redPlayerStage02Battle01, lightGreenPlayerStage02Battle01, yellowPlayerStage02Battle01, bluePlayerStage02Battle01, orangePlayerStage02Battle01, purplePlayerStage02Battle01, greenPlayerStage02Battle01, darkBluePlayerStage02Battle01, lightBluePlayerStage02Battle01, lightBluePlayerStage02Battle02, turquoisePlayerStage02Battle01]);
 
+
+
 //Creates the switchable map layers. Change the URL to reflect where you are hosting your map tiles. Width and Height of original image MUST be defined.
-var start = L.tileLayer.zoomify('https://hreikin.co.uk/interactive-campaign-map/interactive-campaign-map-start/', {
+var start = L.tileLayer.zoomify('./interactive-campaign-map-start/{g}/{z}-{x}-{y}.jpg', {
     width: 8318, 
     height: 3640, 
     tolerance: 0.9, 
@@ -117,7 +125,7 @@ var start = L.tileLayer.zoomify('https://hreikin.co.uk/interactive-campaign-map/
     attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Change this value to whatever you like.
     }).addTo(map),
 
-    stage01 = L.tileLayer.zoomify('https://hreikin.co.uk/interactive-campaign-map/interactive-campaign-map-stage-01/', {
+    stage01 = L.tileLayer.zoomify('./interactive-campaign-map-stage-01/{g}/{z}-{x}-{y}.jpg', {
     width: 8318, 
     height: 3640, 
     tolerance: 0.9, 
@@ -125,7 +133,7 @@ var start = L.tileLayer.zoomify('https://hreikin.co.uk/interactive-campaign-map/
     attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Change this value to whatever you like.
     }),
 
-    stage02 = L.tileLayer.zoomify('https://hreikin.co.uk/interactive-campaign-map/interactive-campaign-map-stage-02/', {
+    stage02 = L.tileLayer.zoomify('./interactive-campaign-map-stage-02/{g}/{z}-{x}-{y}.jpg', {
     width: 8318, 
     height: 3640, 
     tolerance: 0.9, 
@@ -149,4 +157,8 @@ var overlayMaps = {
 
 // Creates a switchable layers control from baseMaps and overlayMaps and adds them to map.
 L.control.layers(baseMaps, overlayMaps).addTo(map);
+
+
+
+
 
