@@ -65,7 +65,7 @@ var lightBluePlayerStage02Battle02Popup = 'Battle information and results can go
 var turquoisePlayerStage02Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
 
 // Creates the player markers, sets the latitude and longitude. Passes options for custom icon and custom popup values.
-var redPlayer = L.marker([83.8, -165.5], {icon: playerIcon}).bindPopup(redPlayerPopup);
+var redPlayer = L.marker([63.8, -165.5], {icon: playerIcon}).bindPopup(redPlayerPopup);
 var lightGreenPlayer = L.marker([81.5, -134.5], {icon: playerIcon}).bindPopup(lightgreenPlayerPopup);
 var yellowPlayer = L.marker([80.5, -94.5], {icon: playerIcon}).bindPopup(yellowPlayerPopup);
 var bluePlayer = L.marker([82.5, -60.5], {icon: playerIcon}).bindPopup(bluePlayerPopup);
