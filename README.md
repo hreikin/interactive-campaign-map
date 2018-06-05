@@ -1,4 +1,5 @@
 # Interactive Campaign Map
+The Interactive Campaign Map is designed to let campaign arbitrators and GM's create an interactive map for use in their tabletop or roleplaying games.
 
 Once you have cloned this repository, to run the demo map simply open the file named 'interactive-campaign-map.html' in a web browser. You should be greeted by the default map which shows the starting points of the demo campaigns players. The map works just like a normal map you would find on the likes of google with zooming and panning responding to input from a touch screen device or mouse like normal. 
 
