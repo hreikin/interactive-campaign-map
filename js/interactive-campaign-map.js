@@ -65,54 +65,54 @@ var lightBluePlayerStage02Battle02Popup = 'Battle information and results can go
 var turquoisePlayerStage02Battle01Popup = 'Battle information and results can go here with a link to any results/league tables. The icon can be set to any image.';
 
 // Creates the player markers, sets the latitude and longitude. Passes options for custom icon and custom popup values.
-var redPlayer = L.marker([63.8, -165.5], {icon: playerIcon}).bindPopup(redPlayerPopup);
-var lightGreenPlayer = L.marker([81.5, -134.5], {icon: playerIcon}).bindPopup(lightgreenPlayerPopup);
-var yellowPlayer = L.marker([80.5, -94.5], {icon: playerIcon}).bindPopup(yellowPlayerPopup);
-var bluePlayer = L.marker([82.5, -60.5], {icon: playerIcon}).bindPopup(bluePlayerPopup);
-var orangePlayer = L.marker([83.0, -18.0], {icon: playerIcon}).bindPopup(orangePlayerPopup);
-var purplePlayer = L.marker([79.0, -9.0], {icon: playerIcon}).bindPopup(purplePlayerPopup);
-var greenPlayer = L.marker([75.8, -44.0], {icon: playerIcon}).bindPopup(greenPlayerPopup);
-var darkBluePlayer = L.marker([74.9, -77.8], {icon: playerIcon}).bindPopup(darkBluePlayerPopup);
-var lightBluePlayer = L.marker([73.9, -112.5], {icon: playerIcon}).bindPopup(lightBluePlayerPopup);
-var turquoisePlayer = L.marker([75.0, -155.5], {icon: playerIcon}).bindPopup(turquoisePlayerPopup);
+var redPlayer = L.marker([-10.0, 10.0], {icon: playerIcon}).bindPopup(redPlayerPopup);
+var lightGreenPlayer = L.marker([-21.0, 33.0], {icon: playerIcon}).bindPopup(lightgreenPlayerPopup);
+var yellowPlayer = L.marker([-25.0, 61.0], {icon: playerIcon}).bindPopup(yellowPlayerPopup);
+var bluePlayer = L.marker([-16.0, 85.0], {icon: playerIcon}).bindPopup(bluePlayerPopup);
+var orangePlayer = L.marker([-14.0, 116.0], {icon: playerIcon}).bindPopup(orangePlayerPopup);
+var purplePlayer = L.marker([-32.0, 122.0], {icon: playerIcon}).bindPopup(purplePlayerPopup);
+var greenPlayer = L.marker([-43.0, 97.0], {icon: playerIcon}).bindPopup(greenPlayerPopup);
+var darkBluePlayer = L.marker([-44.0, 73.0], {icon: playerIcon}).bindPopup(darkBluePlayerPopup);
+var lightBluePlayer = L.marker([-48.0, 49.0], {icon: playerIcon}).bindPopup(lightBluePlayerPopup);
+var turquoisePlayer = L.marker([-45.0, 16.0], {icon: playerIcon}).bindPopup(turquoisePlayerPopup);
 
 // Creates a group of player markers to be added to layer control later. Adds player markers to map.
 var players = L.layerGroup([redPlayer, lightGreenPlayer, yellowPlayer, bluePlayer, orangePlayer, purplePlayer, greenPlayer, darkBluePlayer, lightBluePlayer, turquoisePlayer]).addTo(map);
 
 // Creates the stage 01 battle markers, sets the latitude and longitude. Passes options for custom icon and custom popup values.
-var redPlayerStage01Battle01 = L.marker([84.6, -169.5], {icon: battleIcon}).bindPopup(redPlayerStage01Battle01Popup);
-var redPlayerStage01Battle02 = L.marker([84.6, -159.5], {icon: battleIcon}).bindPopup(redPlayerStage01Battle02Popup);
-var lightGreenPlayerStage01Battle01 = L.marker([83.5, -134.5], {icon: battleIcon}).bindPopup(lightGreenPlayerStage01Battle01Popup);
-var yellowPlayerStage01Battle01 = L.marker([83.5, -89.3], {icon: battleIcon}).bindPopup(yellowPlayerStage01Battle01Popup);
-var yellowPlayerStage01Battle02 = L.marker([80.5, -85.3], {icon: battleIcon}).bindPopup(yellowPlayerStage01Battle02Popup);
-var bluePlayerStage01Battle01 = L.marker([82.5, -44.5], {icon: battleIcon}).bindPopup(bluePlayerStage01Battle01Popup);
-var orangePlayerStage01Battle01 = L.marker([84.4, -23.0], {icon: battleIcon}).bindPopup(orangePlayerStage01Battle01Popup);
-var purplePlayerStage01Battle01 = L.marker([83.0, -3.0], {icon: battleIcon}).bindPopup(purplePlayerStage01Battle01Popup);
-var purplePlayerStage01Battle02 = L.marker([81.0, -2.0], {icon: battleIcon}).bindPopup(purplePlayerStage01Battle02Popup);
-var greenPlayerStage01Battle01 = L.marker([75.8, -30.0], {icon: battleIcon}).bindPopup(greenPlayerStage01Battle01Popup);
-var darkBluePlayerStage01Battle01 = L.marker([77.9, -75.8], {icon: battleIcon}).bindPopup(darkBluePlayerStage01Battle01Popup);
-var lightBluePlayerStage01Battle01 = L.marker([70.9, -110.5], {icon: battleIcon}).bindPopup(lightBluePlayerStage01Battle01Popup);
-var turquoisePlayerStage01Battle01 = L.marker([75.5, -141.5], {icon: battleIcon}).bindPopup(turquoisePlayerStage01Battle01Popup);
-var turquoisePlayerStage01Battle02 = L.marker([75.5, -128.5], {icon: battleIcon}).bindPopup(turquoisePlayerStage01Battle02Popup);
+var redPlayerStage01Battle01 = L.marker([-3.5, 5.0], {icon: battleIcon}).bindPopup(redPlayerStage01Battle01Popup);
+var redPlayerStage01Battle02 = L.marker([-4.0, 15.0], {icon: battleIcon}).bindPopup(redPlayerStage01Battle02Popup);
+var lightGreenPlayerStage01Battle01 = L.marker([-13.0, 30.0], {icon: battleIcon}).bindPopup(lightGreenPlayerStage01Battle01Popup);
+var yellowPlayerStage01Battle01 = L.marker([-13.0, 65.0], {icon: battleIcon}).bindPopup(yellowPlayerStage01Battle01Popup);
+var yellowPlayerStage01Battle02 = L.marker([-25.0, 68.0], {icon: battleIcon}).bindPopup(yellowPlayerStage01Battle02Popup);
+var bluePlayerStage01Battle01 = L.marker([-17.0, 95.0], {icon: battleIcon}).bindPopup(bluePlayerStage01Battle01Popup);
+var orangePlayerStage01Battle01 = L.marker([-4.0, 111.0], {icon: battleIcon}).bindPopup(orangePlayerStage01Battle01Popup);
+var purplePlayerStage01Battle01 = L.marker([-23.0, 127.0], {icon: battleIcon}).bindPopup(purplePlayerStage01Battle01Popup);
+var purplePlayerStage01Battle02 = L.marker([-14.0, 125.0], {icon: battleIcon}).bindPopup(purplePlayerStage01Battle02Popup);
+var greenPlayerStage01Battle01 = L.marker([-42.0, 108.0], {icon: battleIcon}).bindPopup(greenPlayerStage01Battle01Popup);
+var darkBluePlayerStage01Battle01 = L.marker([-37.0, 74.0], {icon: battleIcon}).bindPopup(darkBluePlayerStage01Battle01Popup);
+var lightBluePlayerStage01Battle01 = L.marker([-54.0, 50.0], {icon: battleIcon}).bindPopup(lightBluePlayerStage01Battle01Popup);
+var turquoisePlayerStage01Battle01 = L.marker([-43.0, 27.0], {icon: battleIcon}).bindPopup(turquoisePlayerStage01Battle01Popup);
+var turquoisePlayerStage01Battle02 = L.marker([-44.0, 37.0], {icon: battleIcon}).bindPopup(turquoisePlayerStage01Battle02Popup);
 
 // Creates a group of stage 01 battle markers to be added to layer control later.
 var battlesStage01 = L.layerGroup([redPlayerStage01Battle01, redPlayerStage01Battle02, lightGreenPlayerStage01Battle01, yellowPlayerStage01Battle01, yellowPlayerStage01Battle02, bluePlayerStage01Battle01, orangePlayerStage01Battle01, purplePlayerStage01Battle01, purplePlayerStage01Battle02, greenPlayerStage01Battle01, darkBluePlayerStage01Battle01, lightBluePlayerStage01Battle01, turquoisePlayerStage01Battle01, turquoisePlayerStage01Battle02]);
 
 // Creates the stage 02 battle markers, sets the latitude and longitude. Passes options for custom icon and custom popup values.
-var redPlayerStage02Battle01 = L.marker([84.6, -139.5], {icon: battleIcon}).bindPopup(redPlayerStage02Battle01Popup);
-var lightGreenPlayerStage02Battle01 = L.marker([79.5, -128.5], {icon: battleIcon}).bindPopup(lightGreenPlayerStage02Battle01Popup);
-var yellowPlayerStage02Battle01 = L.marker([83.0, -99.0], {icon: battleIcon}).bindPopup(yellowPlayerStage02Battle01Popup);
-var bluePlayerStage02Battle01 = L.marker([81.0, -57.5], {icon: battleIcon}).bindPopup(bluePlayerStage02Battle01Popup);
-var orangePlayerStage02Battle01 = L.marker([84.4, -14.0], {icon: battleIcon}).bindPopup(orangePlayerStage02Battle01Popup);
-var purplePlayerStage02Battle01 = L.marker([76.0, -9.0], {icon: battleIcon}).bindPopup(purplePlayerStage02Battle01Popup);
-var greenPlayerStage02Battle01 = L.marker([79.8, -30.0], {icon: battleIcon}).bindPopup(greenPlayerStage02Battle01Popup);
-var darkBluePlayerStage02Battle01 = L.marker([77.9, -86.0], {icon: battleIcon}).bindPopup(darkBluePlayerStage02Battle01Popup);
-var lightBluePlayerStage02Battle01 = L.marker([77.5, -126.5], {icon: battleIcon}).bindPopup(lightBluePlayerStage02Battle01Popup);
-var lightBluePlayerStage02Battle02 = L.marker([71.9, -90.0], {icon: battleIcon}).bindPopup(lightBluePlayerStage02Battle02Popup);
-var turquoisePlayerStage02Battle01 = L.marker([76.5, -111.5], {icon: battleIcon}).bindPopup(turquoisePlayerStage02Battle01Popup);
+var redPlayerStage02Battle01 = L.marker([-4.0, 28.0], {icon: battleIcon}).bindPopup(redPlayerStage02Battle01Popup);
+var lightGreenPlayerStage02Battle01 = L.marker([-30.0, 36.0], {icon: battleIcon}).bindPopup(lightGreenPlayerStage02Battle01Popup);
+var yellowPlayerStage02Battle01 = L.marker([-14.0, 58.0], {icon: battleIcon}).bindPopup(yellowPlayerStage02Battle01Popup);
+var bluePlayerStage02Battle01 = L.marker([-23.0, 87.0], {icon: battleIcon}).bindPopup(bluePlayerStage02Battle01Popup);
+var orangePlayerStage02Battle01 = L.marker([-4.0, 119.0], {icon: battleIcon}).bindPopup(orangePlayerStage02Battle01Popup);
+var purplePlayerStage02Battle01 = L.marker([-42.0, 122.0], {icon: battleIcon}).bindPopup(purplePlayerStage02Battle01Popup);
+var greenPlayerStage02Battle01 = L.marker([-30.0, 107.0], {icon: battleIcon}).bindPopup(greenPlayerStage02Battle01Popup);
+var darkBluePlayerStage02Battle01 = L.marker([-37.0, 66.0], {icon: battleIcon}).bindPopup(darkBluePlayerStage02Battle01Popup);
+var lightBluePlayerStage02Battle01 = L.marker([-53.0, 63.0], {icon: battleIcon}).bindPopup(lightBluePlayerStage02Battle01Popup);
+var lightBluePlayerStage02Battle02 = L.marker([-40.0, 37.0], {icon: battleIcon}).bindPopup(lightBluePlayerStage02Battle02Popup);
+var turquoisePlayerStage02Battle01 = L.marker([-41.0, 48.0], {icon: battleIcon}).bindPopup(turquoisePlayerStage02Battle01Popup);
 
 // Creates a group of stage 02 battle markers to be added to layer control later.
-var battlesStage02 = L.layerGroup([redPlayerStage02Battle01, lightGreenPlayerStage02Battle01, yellowPlayerStage02Battle01, bluePlayerStage02Battle01, orangePlayerStage02Battle01, purplePlayerStage02Battle01, greenPlayerStage02Battle01, darkBluePlayerStage02Battle01, lightBluePlayerStage02Battle01, lightBluePlayerStage02Battle02, turquoisePlayerStage02Battle01]);
+var battlesStage02 = L.layerGroup([redPlayerStage02Battle01, lightGreenPlayerStage02Battle01, yellowPlayerStage02Battle01, bluePlayerStage02Battle01, orangePlayerStage02Battle01, purplePlayerStage02Battle01, greenPlayerStage02Battle01, darkBluePlayerStage02Battle01, lightBluePlayerStage02Battle01, lightBluePlayerStage02Battle02, turquoisePlayerStage02Battle01]).addTo(map);
 
 
 
