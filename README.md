@@ -2,14 +2,16 @@
 
 The interactive campaign map repository contains a few files and folders which i will outline below.
 
+- **docs :** Contains documentation on using the Interactive Campaign Map.
 - **images :** Contains files used for custom markers, player icons, etc.
 - **interactive-campaign-map-stage-01 :** Contains map tiles for stage 01 of the demo campaign.
 - **interactive-campaign-map-stage-02 :** Contains map tiles for stage 02 of the demo campaign.
 - **interactive-campaign-map-start :** Contains map tiles for the beginning of the demo campaign.
-- **L.TileLayer.Zoomify.js :** This file allows us to display Zoomify tiles with Leaflet and is originally provided by the repository available [here](https://github.com/turban/Leaflet.Zoomify). There have been no changes made to this file and it is only included in this repository to keep things simple and allow the demo map to work ‘out of the box’.
+- **js :** Contains the Javascript files required for the Interactive Campaign Map and L.tileLayer.zoomify.
+- **L.tileLayer.zoomify-LICENSE.md :** The license for the L.tileLayer.zoomify.js file.
+- **LICENSE.md :** The license for the Interactive Campaign Map.
 - **README.md :** The README file of the repository which includes basic information to guide you through the process of creating an interactive campaign map.
 - **interactive-campaign-map.html :** HTML file used to display the interactive campaign map demo.
-- **interactive-campaign-map.js :** Javascript file which contains the code for the interactive campaign map demo.
 
 ## How To Guide
 
