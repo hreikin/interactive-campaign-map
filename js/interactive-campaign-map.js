@@ -1,8 +1,9 @@
-//Creates the map, tells it to display in the element with id of 'mapid' and sets the inital latitude, longitude and zoom values. Change the URL to reflect where you are hosting your map tiles. Width and Height of original image MUST be defined.
+//Creates the map, tells it to display in the element with id of 'mapid' and sets a flat projection, as we are projecting an image. 
 var map = L.map('mapid', { 
     crs: L.CRS.Simple, //Set a flat projection, as we are projecting an image
 });
 
+//Change the URL to reflect where you are hosting your map tiles. Width and Height of original image MUST be defined.
 var layer = L.tileLayer.zoomify('./interactive-campaign-map-start/{g}/{z}-{x}-{y}.jpg', {
     width: 8318, 
     height: 3640,
