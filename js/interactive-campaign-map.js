@@ -112,7 +112,7 @@ var lightBluePlayerStage02Battle02 = L.marker([-40.0, 37.0], {icon: battleIcon})
 var turquoisePlayerStage02Battle01 = L.marker([-41.0, 48.0], {icon: battleIcon}).bindPopup(turquoisePlayerStage02Battle01Popup);
 
 // Creates a group of stage 02 battle markers to be added to layer control later.
-var battlesStage02 = L.layerGroup([redPlayerStage02Battle01, lightGreenPlayerStage02Battle01, yellowPlayerStage02Battle01, bluePlayerStage02Battle01, orangePlayerStage02Battle01, purplePlayerStage02Battle01, greenPlayerStage02Battle01, darkBluePlayerStage02Battle01, lightBluePlayerStage02Battle01, lightBluePlayerStage02Battle02, turquoisePlayerStage02Battle01]).addTo(map);
+var battlesStage02 = L.layerGroup([redPlayerStage02Battle01, lightGreenPlayerStage02Battle01, yellowPlayerStage02Battle01, bluePlayerStage02Battle01, orangePlayerStage02Battle01, purplePlayerStage02Battle01, greenPlayerStage02Battle01, darkBluePlayerStage02Battle01, lightBluePlayerStage02Battle01, lightBluePlayerStage02Battle02, turquoisePlayerStage02Battle01]);
 
 
 
