@@ -27,7 +27,7 @@ The interactive campaign map repository contains a few files and folders which i
 A fullscreen demo is available to view [here](https://hreikin.co.uk/interactive-campaign-map/interactive-campaign-map.html).
 
 ## Basic Usage
-A detailed guide is available to view [here](https://www.hreikin.co.uk/2018/06/03/user-guide-creating-an-interactive-campaign-map/). Full documentation is available in the ```docs``` folder of this repository.
+A detailed guide is available to view [here](https://www.hreikin.co.uk/2018/06/07/user-guide-how-to-create-an-interactive-campaign-map-with-leafletjs/). Full documentation is available in the ```docs``` folder of this repository.
 
 Create the map and set a flat projection, as we are projecting an image. Then create the Zoomify tile layer.
 ```js

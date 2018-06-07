@@ -19,7 +19,7 @@ A fullscreen demo is available to view [here](https://hreikin.co.uk/interactive-
 L.tileLayer.zoomify extends the original Leaflet TileLayer, so basically everything that `L.TileLayer` supports, is supported by the L.tileLayer.zoomify plugin.
 
 ## Basic Usage
-A detailed guide is available to view [here](https://www.hreikin.co.uk/2018/06/03/user-guide-creating-an-interactive-campaign-map/). The official Leaflet documentation is available [here](https://leafletjs.com/reference-1.3.0.html).
+A detailed guide is available to view [here](https://www.hreikin.co.uk/2018/06/07/user-guide-how-to-create-an-interactive-campaign-map-with-leafletjs/). The official Leaflet documentation is available [here](https://leafletjs.com/reference-1.3.0.html).
 
 Create the map and set a flat projection, as we are projecting an image. Then create the Zoomify tile layer.
 ```js
