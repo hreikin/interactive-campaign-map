@@ -1,22 +1,11 @@
-# Interactive Campaign Map
+Interactive Campaign Map
+==========
+## Description
 The Interactive Campaign Map is designed to let campaign arbitrators and GM's create an interactive map for use in their tabletop or roleplaying games.
 
 Once you have cloned this repository, to run the demo map simply open the file named 'interactive-campaign-map.html' in a web browser. You should be greeted by the default map which shows the starting points of the demo campaigns players. The map works just like a normal map you would find on the likes of google with zooming and panning responding to input from a touch screen device or mouse like normal. 
 
 You can click on the player icons to bring up popups and a layers filter is available in the top right corner. All marker icons can be customised to represent whatever you need but in this simple demo we only have 2, one for the players and one for battles. If you open up the layers control in the top right corner you can choose which map to show and there is also a filter for you to choose which markers you want to display on the map. These markers can all be clicked and include a popup which can be used to include whatever information you see fit.
-
-The interactive campaign map repository contains a few files and folders which i will outline below.
-
-- **docs :** Contains documentation on using the Interactive Campaign Map.
-- **images :** Contains files used for custom markers, player icons, etc.
-- **interactive-campaign-map-stage-01 :** Contains map tiles for stage 01 of the demo campaign.
-- **interactive-campaign-map-stage-02 :** Contains map tiles for stage 02 of the demo campaign.
-- **interactive-campaign-map-start :** Contains map tiles for the beginning of the demo campaign.
-- **js :** Contains the Javascript files required for the Interactive Campaign Map and L.tileLayer.zoomify.
-- **L.tileLayer.zoomify-LICENSE.md :** The license for the L.tileLayer.zoomify.js file.
-- **LICENSE.md :** The license for the Interactive Campaign Map.
-- **README.md :** The README file of the repository which includes basic information to guide you through the process of creating an interactive campaign map.
-- **interactive-campaign-map.html :** HTML file used to display the interactive campaign map demo.
 
 ## Requirements
 - [Leaflet](https://leafletjs.com/) 1.3.1 (Or later).
@@ -26,8 +15,11 @@ The interactive campaign map repository contains a few files and folders which i
 ## Demo
 A fullscreen demo is available to view [here](https://hreikin.co.uk/interactive-campaign-map/interactive-campaign-map.html).
 
+## Compatibility
+L.tileLayer.zoomify extends the original Leaflet TileLayer, so basically everything that `L.TileLayer` supports, is supported by the L.tileLayer.zoomify plugin.
+
 ## Basic Usage
-A detailed guide is available to view [here](https://www.hreikin.co.uk/2018/06/03/user-guide-creating-an-interactive-campaign-map/). Full documentation is available in the ```docs``` folder of this repository.
+A detailed guide is available to view [here](https://www.hreikin.co.uk/2018/06/03/user-guide-creating-an-interactive-campaign-map/). The official Leaflet documentation is available [here](https://leafletjs.com/reference-1.3.0.html).
 
 Create the map and set a flat projection, as we are projecting an image. Then create the Zoomify tile layer.
 ```js
@@ -190,6 +182,34 @@ var overlayMaps = {
 
 L.control.layers(baseMaps, overlayMaps).addTo(map);
 ```
+
+## L.tileLayer.zoomify API
+### Creation
+| Factory | Description
+| --- | --- 
+| L.tileLayer.zoomify(*urlTemplate*, *options?* ) | Instantiates a Zoomify tile layer object given a URL template and optionally an options object.
+
+#### URL template
+The urlTemplate can be a regular Leaflet [url template](http://leafletjs.com/reference.html#url-template), but also has the `{g}` variable available that contains the current TileGroup number. E.g. `www.your.url/{g}/{z}-{x}-{y}.jpg`.
+
+### Methods
+| Method | Returns | Description
+| --- | --- | ---
+| getBounds() | `LatLngBounds` | Returns the LatLngBounds of the Zoomify layer.
+
+### Options
+You can use `TileLayer` options and additionally the following options:
+#### Required
+| Option | Type | Default | Description
+| --- | --- | --- | ---
+| width | Number | `undefined` | Width of the Zoomify image on the highest zoom. Can be found in ImageProperties.xml
+| height | Number | `undefined` | Height of the Zoomify image on the highest zoom. Can be found in ImageProperties.xml
+
+#### Optional
+| Option | Type | Default | Description
+| --- | --- | --- | ---
+| tileGroupPrefix | String | `TileGroup` | The prefix used for the tile subdirectories
+| tilesPerTileGroup | Number | `256` | The number of tiles per subdirectory
 
 ## License
 This software is released under the [MIT licence](http://www.opensource.org/licenses/mit-license.php).
