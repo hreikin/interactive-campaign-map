@@ -1,21 +1,27 @@
 <!doctype html>
 <html>
 <head>
+    <!-- Character Encoding -->
     <meta charset="utf-8">
+    
+    <!-- Tell the mobile browser to disable unwanted scaling of the page and set it to its actual size. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     
     <!-- Page Title -->
     <title>Campaign Map Demo</title>
     
-    <!-- Link to leaflet.css stylesheet, we use version 0.7.7 as some major changes were introduced from version 1.0.0 onwards which cause compatibility issues. -->
+    <!-- Link to leaflet.css stylesheet. -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"/>
 
     <!-- Styling applied to the HTML element which displays the interactive map. Width and Height MUST be defined for the map to display correctly. -->
     <style type="text/css">
-        html, body, #mapid {
-            width: 100%;
-            height: 100%;
+        body {
             padding: 0;
             margin: 0;
+        }
+        html, body, #mapid {    /* To make our map div element stretch to all available space (fullscreen). */
+            height: 100%;
+            width: 100vw;
         }
     </style>
 </head>
@@ -25,7 +31,7 @@
     <!-- The HTML element which holds the interactive map. The id attribute MUST be defined. -->
     <div id="mapid"></div>
 
-    <!-- Link to leaflet.js file, we use version 0.7.7 as some major changes were introduced from version 1.0.0 onwards which cause compatibility issues. -->
+    <!-- Link to leaflet.js file. -->
     <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
     
     <!-- Link to L.TileLayer.Zoomify.js file. This extends the L.TileLayer class from leaflet.js, you do not need to touch this file.-->
