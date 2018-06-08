@@ -1,27 +1,27 @@
 //Creates the map, tells it to display in the element with id of 'mapid' and sets a flat projection, as we are projecting an image. 
 var map = L.map('mapid', { 
-    crs: L.CRS.Simple, //Set a flat projection, as we are projecting an image
+    crs: L.CRS.Simple, //Set a flat CRS (Coordinate Reference System) projection as we are projecting an image.
 });
 
 //Change the URL to reflect where you are hosting your map tiles. Width and Height of original image MUST be defined.
 var layer = L.tileLayer.zoomify('./interactive-campaign-map-start/{g}/{z}-{x}-{y}.jpg', {
-    width: 8318, 
-    height: 3640,
+    width: 8318,    // MUST be defined.
+    height: 3640,   // MUST be defined.
 }).addTo(map);
 
-//Setting the view to our layer bounds, set by our Zoomify plugin
+//Setting the view to our layer bounds, set by our Zoomify plugin.
 map.fitBounds(layer.getBounds());
 
 // Create the icon used for the player markers. May be changed to any image you wish.
 var playerIcon = L.icon({
-    iconUrl: 'images/players.png',
-    iconSize: [38, 38],
+    iconUrl: 'images/players.png',  // Location of file to be used as icon.
+    iconSize: [38, 38],             // Size of icon on map.
 });
 
 // Create the icon used for the battle markers. May be changed to any image you wish.
 var battleIcon = L.icon({
-    iconUrl: 'images/battles.png',
-    iconSize: [50, 50],
+    iconUrl: 'images/battles.png',  // Location of file to be used as icon.
+    iconSize: [50, 50],             // Size of icon on map.
 });
 
 // Create the player popup content. You can change these to include player bios, army lists, etc for each individual player. Accepts HTML content such as images and links.
@@ -119,41 +119,41 @@ var battlesStage02 = L.layerGroup([redPlayerStage02Battle01, lightGreenPlayerSta
 
 //Creates the switchable map layers. Change the URL to reflect where you are hosting your map tiles. Width and Height of original image MUST be defined.
 var start = L.tileLayer.zoomify('./interactive-campaign-map-start/{g}/{z}-{x}-{y}.jpg', {
-    width: 8318, 
-    height: 3640, 
+    width: 8318,                                                                                        // MUST be defined.
+    height: 3640,                                                                                       // MUST be defined.
     tolerance: 0.9, 
     layers: [stage01, stage02, players, battlesStage01, battlesStage02],                                //Layers to include in layers control, initial map should NOT be included as it will be added automatically.
-    attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Change this value to whatever you like.
+    attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Attribution which appears in the bottom left corner, change this value to whatever you like.
     }).addTo(map),
 
     stage01 = L.tileLayer.zoomify('./interactive-campaign-map-stage-01/{g}/{z}-{x}-{y}.jpg', {
-    width: 8318, 
-    height: 3640, 
+    width: 8318,                                                                                        // MUST be defined.
+    height: 3640,                                                                                       // MUST be defined.
     tolerance: 0.9, 
     layers: [stage01, stage02, players, battlesStage01, battlesStage02],                                //Layers to include in layers control, initial map should NOT be included as it will be added automatically.
-    attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Change this value to whatever you like.
+    attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Attribution which appears in the bottom left corner, change this value to whatever you like.
     }),
 
     stage02 = L.tileLayer.zoomify('./interactive-campaign-map-stage-02/{g}/{z}-{x}-{y}.jpg', {
-    width: 8318, 
-    height: 3640, 
+    width: 8318,                                                                                        // MUST be defined.
+    height: 3640,                                                                                       // MUST be defined.
     tolerance: 0.9, 
     layers: [stage01, stage02, players, battlesStage01, battlesStage02],                                //Layers to include in layers control, initial map should NOT be included as it will be added automatically.
-    attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Change this value to whatever you like.
+    attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Attribution which appears in the bottom left corner, change this value to whatever you like.
     });
 
 // Creates baseMaps layer and passes which maps to include in the layers control.
 var baseMaps = {
-    "Campaign Start": start,
-    "Campaign Stage 01": stage01,
-    "Campaign Stage 02": stage02
+    "Campaign Start": start,        // The value within quotation marks is the name of the switchable control as it appears on the map. The second value is the layer name.
+    "Campaign Stage 01": stage01,   // The value within quotation marks is the name of the switchable control as it appears on the map. The second value is the layer name.
+    "Campaign Stage 02": stage02    // The value within quotation marks is the name of the switchable control as it appears on the map. The second value is the layer name.
 };
 
 // Creates overlayMaps layer and passes which marker groups to include in the layers control.
 var overlayMaps = {
-    "Players": players,
-    "Stage 1 Battles": battlesStage01,
-    "Stage 2 Battles": battlesStage02
+    "Players": players,                 // The value within quotation marks is the name of the switchable control as it appears on the map. The second value is the group name.
+    "Stage 1 Battles": battlesStage01,  // The value within quotation marks is the name of the switchable control as it appears on the map. The second value is the group name.
+    "Stage 2 Battles": battlesStage02   // The value within quotation marks is the name of the switchable control as it appears on the map. The second value is the group name.
     };
 
 // Creates a switchable layers control from baseMaps and overlayMaps and adds them to map.
