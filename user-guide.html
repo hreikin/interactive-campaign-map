@@ -1,0 +1,112 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+title: User Guide
+layout: page
+permalink: /user-guide/
+---
+<h2 style="text-align: center; padding-top: 20px;">Interactive Campaign Map</h2>
+<p>I created the Interactive Campaign Map for a local tabletop campaign that was being held, the idea behind it was to create a map to demonstrate the players progress through the stages of the campaign that was easily accessible by everyone involved or interested in its progress.</p>
+<p><a href="https://github.com/hreikin/interactive-campaign-map"><span class="username">Repository</span></a></p>
+<p><a href="https://interactive-campaign-map.hreikin.co.uk/readme/"><span class="username">README</span></a></p>
+<p><a href="https://interactive-campaign-map.hreikin.co.uk/documentation/"><span class="username">Documentation</span></a></p>
+<p><a href="https://interactive-campaign-map.hreikin.co.uk/user-guide/"><span class="username">User Guide</span></a></p>
+<h2 style="text-align: center;">What Is An Interactive Campaign Map ?</h2>
+<p style="padding-bottom: 20px;">The Interactive Campaign Map is designed to let wargaming and role playing campaign arbitrators or GM’s create an interactive map for use in their tabletop campaigns or role playing games. The interactive campaign map works exactly like any normal map you might find on the likes of Google with zooming and panning controls that work on all devices and custom markers which when clicked can provide a popup. Have a play about with the demo below, a full screen version is available to view <a href="https://interactive-campaign-map.hreikin.co.uk/interactive-campaign-map.html">here</a>.</p>
+<iframe src="https://interactive-campaign-map.hreikin.co.uk/interactive-campaign-map.html" width="100%" height="300px" scrolling="yes" class="iframe-class" frameborder="0"></iframe>
+<p>As you can see from the demo, the map can be used to convey an awful lot of information from city, world or galaxy maps to player biographies and battle information. The popups can contain links or images among other things and you are really only limited by your imagination.</p>
+<h2 style="text-align: center;">Requirements</h2>
+<ul>
+    <li>A Zoomify tile source. Zoomify Free is available from <a href="http://www.zoomify.com/free.htm">here</a>.</li>
+    <li>Leaflet 1.3.1 (Or later). This is loaded from one of the official CDN providers.</li>
+    <li>L.tileLayer.zoomify (Included). Originally taken from the <a href="https://github.com/cmulders/Leaflet.Zoomify">Leaflet.Zoomify repository</a>.</li>
+    <li>The <a href="https://github.com/hreikin/interactive-campaign-map">Interactive Campaign Map</a> git repository.</li>
+    <li>Web hosting to serve the map tiles from.</li>
+</ul>
+<p>The interactive campaign map repository contains a few files and folders which i will outline below.</p>
+<ul>
+    <li><b>docs:</b> Contains documentation on using the Interactive Campaign Map.</li>
+    <li><b>images:</b> Contains files used for custom markers, player icons, etc.</li>
+    <li><b>interactive-campaign-map-stage-01:</b> Contains map tiles for stage 01 of the demo campaign.</li>
+    <li><b>interactive-campaign-map-stage-02:</b> Contains map tiles for stage 02 of the demo campaign.</li>
+    <li><b>interactive-campaign-map-start:</b> Contains map tiles for the beginning of the demo campaign.</li>
+    <li><b>js:</b> Contains the Javascript files required for the Interactive Campaign Map and L.tileLayer.zoomify.</li>
+    <li><b>L.tileLayer.zoomify-LICENSE.md:</b> The license for the L.tileLayer.zoomify.js file.</li>
+    <li><b>LICENSE.md:</b> The license for the Interactive Campaign Map.</li>
+    <li><b>README.md:</b> The README file of the repository which includes basic information to guide you through the process of creating an interactive campaign map.</li>
+    <li><b>interactive-campaign-map.html:</b> HTML file used to display the interactive campaign map demo.</li>
+</ul>
+<h2 style="text-align: center;">Creating The Interactive Campaign Map</h2>
+<p>This guide will focus on creating an interactive campaign map for a Warhammer 40000/Necromunda style game but it could easily be adapted for many other game systems. First off you will need to source a suitable image to be used as the base image of your map. This file should be high quality and have a high resolution. I recommend looking for satellite imagery or similar as these are perfect for creating maps from but you could also design your own world to fight over in GIMP/Photoshop if you know how.</p>
+<p>Once you have sourced your base image file you will need to edit it in a program like GIMP to create the territories your players will be fighting over. This can be done in a number of ways but for the purposes of this guide i will be using the pencil tool in GIMP.</p>
+<h2 style="text-align: center;">Creating The Base Map</h2>
+<p>Open your source image file in GIMP and rename the default layer. In the right hand panel, right click your source image layer and select ‘Edit Layer Attributes’ from the menu and enter a suitable name. Next we want to change the colour of our map, in the top menu select ‘Colors’ and choose the ‘Colorize’ option. Play about with the ‘Hue’, ‘Saturation’ and ‘Lightness’ levels until you are happy with the effect and then click ‘OK’.</p>
+<p>Next you need to create a layer to be used to display your territory zones. This can be done by right clicking your image and selecting ‘Layer > New Layer’ from the menu that appears. You can give it a name in the popup that appears, the new layer will then appear in the right hand panel.</p>
+<div class="row">
+    <div class="column">
+        <img src="/test.png">
+    </div>
+    <div class="column">
+        <img src="/test.png">
+    </div>
+</div>
+<p style="padding-top: 20px;">Ensure that you have the new layer selected as the active layer and then select the pencil tool from the icons that are located in the left hand panel. You can change some options related to the pencil tool in the ‘Tool Options’ panel which is also located in the left hand panel just below the icons. Most of the default options should be fine but you can set various things like what brush is used, the size of the brush and opacity. Have a play around with these options until you are happy with them.</p>
+<p>It is now time to begin splitting up your territories on the map by drawing lines with the pencil tool to create different zones. Try to follow any naturally occurring borders in your base image to create your territories as this will look more natural. This will be a lengthy process but it can be sped up a little with this trick. Click a point on the map and then hold down the ‘SHIFT’ key, a guideline should show up between the first point and your mouse pointers location, Next move your mouse to where you would like the other end of the line to be and click the mouse button. You can then move on to the next point while still holding the ‘SHIFT’ key and click again to create another line. Follow this procedure until you have separated the map into as many territories as necessary. This trick allows you to create straight lines in an easy manner and also speeds up the process of creating your territories.</p>
+<div class="row">
+    <div class="column">
+        <img src="/test.png">
+    </div>
+    <div class="column">
+        <img src="/test.png">
+    </div>
+</div>
+<p style="padding-top: 20px;">Once you have finished creating your territories it is time to add some colour, select the bucket fill tool from the left hand panel and set the opacity to 50% or similar in the tool options panel. You can choose whatever colours you wish to represent the players starting territory and just have to click inside an area you split up earlier to fill it with the selected colour.</p>
+<p>At this point your base map file is ready to be exported so you can create your initial campaign map tiles. In later stages of the campaign when new territories are gained or lost you will need to edit this file to reflect the changes and export it before creating that stages map tiles. In the top bar menu select ‘FILE > EXPORT AS’ and give your file a name, make sure you change the file extension to .jpg before exporting the image.</p>
+<h2 style="text-align: center;">Creating The Map Tiles</h2>
+<p>With the base map file complete it is time to create the map tiles that your interactive campaign map will use, this is done with the Zoomify program. This program will take the exported image and split it up into map tiles which Leaflet.js is then able to use to create the interactive campaign map. Open up Zoomify and run your exported base map file through the program by dragging and dropping it into the Zoomify window, the window will update you on its process and when it is finished you may close it.</p>
+<div class="row">
+    <div class="column">
+        <img src="/test.png">
+    </div>
+    <div class="column">
+        <img src="/test.png">
+    </div>
+</div>
+<p style="padding-top: 20px;">Zoomify will have created a folder that holds your map tiles, this will be located in the same folder you ran Zoomify from, copy this folder to the Interactive Campaign Map folder. You should now have everything needed to create your interactive campaign map.</p>
+<h2 style="text-align: center;">Creating The Map</h2>
+<p>For the interactive campaign map to work correctly the map tiles need to be served from some web hosting. Upload the folder you just copied to some web hosting and then make copies of the ‘interactive-campaign-map.html’ and ‘interactive-campaign-map.js’ files from the interactive campaign map repository to work on. The interactive-campaign-map.js file can be found in the folder named ‘js’.</p>
+<p>The HTML file contains the code used to display the map on a web page while the JS file contains the code to create our map, code comments are available within these files but i will outline everything below. Open the copy you made of the ‘interactive-campaign-map.html’ file in a text or code editor, i highly recommend <a href="https://code.visualstudio.com/">VS Code</a> and we will be using it in this guide for its awesome ‘Live Preview’ feature which will help us when placing our map markers.</p>
+<h2 style="text-align: center;">The HTML Code</h2>
+<p>The HTML file doesn’t contain much code as it is only used to display our map while all the ‘work’ gets done by the JS file. The first half of the file, up to about line 21, is what is known as the ‘Head’ section. Here a few things are declared like the default character set and page title, we then load the Leaflet.css file to use for our map from the official Leaflet CDN. In the final part of the ‘Head’ section we style our map with some basic CSS, the ‘width’ and ‘height’ values must be declared.</p>
+<p>The last half of the file contains the ‘Body’ section, on line 26 we create a HTML element to hold our map and give it a CSS ID. Line 29 loads the Leaflet.js file to use for our map from the official Leaflet CDN while lines 31 – 35 loads the 2 JS files included within the Interactive Campaign Map repository.</p>
+<img src="/test.png">
+<p style="padding-top: 20px;">At this point you should be able to use the ‘Live Preview’ feature that comes with VS Code, in the top right hand corner you should see 3 icons positioned vertically on top of each other, the top one should look like a lightning bolt on its side and when clicked it will open up our HTML file in a browser window.</p>
+<p>Have a play around with the map that loads up, you can zoom in and pan around the map like any normal interactive map. You can also filter different layers using the control available in the top right as well as click any icon to bring up a popup with some default content.</p>
+<img src="/test.png">
+<h2 style="text-align: center; padding-top: 20px;">The Javascript Code</h2>
+<p>It is now time to open up your copy of the ‘interactive-campaign-map.js’ file you created in VS Code. Whenever you make a change to this file you will need to save it for the changes to appear in your preview window, this is important to remember when working on this file.</p>
+<p>On lines 1 – 4 we instantiate the map and tell it to display in the HTML element with the ID of ‘mapid’, we then set a flat CRS (Coordinate Reference System) projection as we are using an image for our map. Then on lines 6 – 10 we create the Zoomify tile layer, on line 7 you will need to replace the folder location to match that of your map tiles. You will also need to alter the width and height values to match those of your base map file, this must be done for things to work correctly.  Line 13 sets the view to our layer bounds which is set by the Zoomify plugin.</p>
+<p>The next 2 variables declared on lines 15 – 25 define the location and size of any custom images to be used by the markers on the map, you can use the files provided or change these attributes and use your own files. After this, on lines 27 – 37, we create the popup content to be used by the player icon markers when clicked. You should rename these variables to match those of the colours you picked when creating your base map in GIMP. The popup content accepts HTML input like link and image tags. You should change the popup content to whatever you like, they could include information like player biographies and army or character composition for example.</p>
+<img src="/test.png">
+<p style="padding-top: 20px;">The following 2 groups of variables from lines 39 – 66  declare the popup content for stage 01 and stage 02 battles for each player. These may be commented out until you need them, in Javascript single line comments start with // and multi-line comments start with /* and end with */. You should change the variable names to match your campaign and you can alter the content as and when needed.</p>
+<p>After these, on lines 68 – 78 we create the player markers and set the latitude and longitude values and then pass any options for custom icons and custom popup values we declared earlier. These variables should be renamed to match the colours you chose when creating your base map.</p>
+<p>Setting the latitude and longitude values of the markers will take some trial and error but using VS Code to preview your changes will make this easier. As we set a simple CRS projection earlier the top left corner should be coordinates [0.0, 0.0]. The first value is the height of the marker and the second value is its horizontal location. The height of the marker will be a negative coordinate like -10.0, while the horizontal coordinate will be positive one like 15.0 for example. Play around until you are happy with their location and remember to save your changes to be able to preview them.</p>
+<p>On line 81 we add all the player markers to a layer group called ‘players’ and add them to the map. This group is used in the layers control to toggle the player markers on and off and should contain the same variable names you declared for the player markers.</p>
+<img src="/test.png">
+<p style="padding-top: 20px;">Lines 83 – 116 should be commented out until they are needed, remember that in Javascript single line comments start with // and multi-line comments start with /* and end with */. On lines 83 – 97 and 102 – 113 we create the stage 01 and stage 02 battle markers and set the latitude and longitude values and then pass any options for custom icons and custom popup values we declared earlier. These variables should be renamed to match the popup content you declared earlier. Setting the latitude and longitude values of the markers will take some trial and error much like before. Play around until you are happy with their location and remember to save your changes to be able to preview them.</p>
+<p>On lines 100 and 116 we add all the stage 01 and stage 02 battle markers to a layer group and add them to the map. These groups are used in the layers control to toggle the battle markers on and off for each stage and should contain the same variable names you declared for the battle markers.</p>
+<img src="/test.png">
+<p style="padding-top: 20px;">Lines 120 – 143 create the switchable map layers, you can comment out lines 129 – 143 until they are required by your campaign. On lines 121, 129 and 137  you will need to replace the folder location to match that of your map tiles. The width and height values must be defined. The layers attribute includes which map layers or markers to include in the switchable layers control, notice you do not need to include the map layer loaded when the map is created as the control is smart enough to include it anyway.</p>
+<p>From line 145 – 157 we create 2 layers, one to hold our map layers and one to hold our player and battle markers. The first set of values are the labels which will be displayed in your switchable control, the second set of values are the names of the layers or marker groups. Finally on line 160 we create the switchable layers control and add it to the map.</p>
+<img src="/test.png">
+<h2 style="text-align: center; padding-top: 20px;">Uploading The Map</h2>
+<p>Once you have finished modifying the Javascript file and have it working in the VS Code ‘Live Preview’ then you are done creating your interactive campaign map and are ready to host it online with your map tiles that you uploaded earlier. Upload the ‘images’ and ‘js’ folders along with your copy of the ‘interactive-campaign-map.html’ file you made previously to the same location as your map tiles. You should then be able to visit your HTML page in a browser and see your map in action.</p>
+<h2 style="text-align: center;">Further Reading</h2>
+<p>More detailed information and further reading can be found at the following links. I hope you have enjoyed this guide and found it of some use. Please get in touch in the comments below if you run into any trouble and to show me any of your map creations, i would love to see them all.</p>
+<ul>
+    <li><a href="https://github.com/hreikin/interactive-campaign-map">Interactive Campaign Map Github Repository</a></li>
+    <li><a href="https://leafletjs.com/reference-1.3.4.html">Leaflet.js Documentation</a></li>
+    <li><a href="https://github.com/turban/Leaflet.Zoomify">L.TileLayer.Zoomify Github Repository</a></li>
+    <li><a href="https://blog.mastermaps.com/2013/06/showing-zoomify-images-with-leaflet.html">Showing Zoomify Images With Leaflet</a></li>
+</ul>
