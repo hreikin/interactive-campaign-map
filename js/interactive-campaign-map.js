@@ -4,7 +4,7 @@ var map = L.map('mapid', {
 });
 
 //Change the URL to reflect where you are hosting your map tiles. Width and Height of original image MUST be defined.
-var layer = L.tileLayer.zoomify('./interactive-campaign-map-start/{g}/{z}-{x}-{y}.jpg', {
+var layer = L.tileLayer.zoomify('/interactive-campaign-map-start/{g}/{z}-{x}-{y}.jpg', {
     width: 8318,    // MUST be defined.
     height: 3640,   // MUST be defined.
 }).addTo(map);
@@ -14,13 +14,13 @@ map.fitBounds(layer.getBounds());
 
 // Create the icon used for the player markers. May be changed to any image you wish.
 var playerIcon = L.icon({
-    iconUrl: 'images/players.png',  // Location of file to be used as icon.
+    iconUrl: '/images/players.png',  // Location of file to be used as icon.
     iconSize: [38, 38],             // Size of icon on map.
 });
 
 // Create the icon used for the battle markers. May be changed to any image you wish.
 var battleIcon = L.icon({
-    iconUrl: 'images/battles.png',  // Location of file to be used as icon.
+    iconUrl: '/images/battles.png',  // Location of file to be used as icon.
     iconSize: [50, 50],             // Size of icon on map.
 });
 
@@ -118,7 +118,7 @@ var battlesStage02 = L.layerGroup([redPlayerStage02Battle01, lightGreenPlayerSta
 
 
 //Creates the switchable map layers. Change the URL to reflect where you are hosting your map tiles. Width and Height of original image MUST be defined.
-var start = L.tileLayer.zoomify('./interactive-campaign-map-start/{g}/{z}-{x}-{y}.jpg', {
+var start = L.tileLayer.zoomify('/interactive-campaign-map-start/{g}/{z}-{x}-{y}.jpg', {
     width: 8318,                                                                                        // MUST be defined.
     height: 3640,                                                                                       // MUST be defined.
     tolerance: 0.9, 
@@ -126,7 +126,7 @@ var start = L.tileLayer.zoomify('./interactive-campaign-map-start/{g}/{z}-{x}-{y
     attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Attribution which appears in the bottom left corner, change this value to whatever you like.
     }).addTo(map),
 
-    stage01 = L.tileLayer.zoomify('./interactive-campaign-map-stage-01/{g}/{z}-{x}-{y}.jpg', {
+    stage01 = L.tileLayer.zoomify('/interactive-campaign-map-stage-01/{g}/{z}-{x}-{y}.jpg', {
     width: 8318,                                                                                        // MUST be defined.
     height: 3640,                                                                                       // MUST be defined.
     tolerance: 0.9, 
@@ -134,7 +134,7 @@ var start = L.tileLayer.zoomify('./interactive-campaign-map-start/{g}/{z}-{x}-{y
     attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Attribution which appears in the bottom left corner, change this value to whatever you like.
     }),
 
-    stage02 = L.tileLayer.zoomify('./interactive-campaign-map-stage-02/{g}/{z}-{x}-{y}.jpg', {
+    stage02 = L.tileLayer.zoomify('/interactive-campaign-map-stage-02/{g}/{z}-{x}-{y}.jpg', {
     width: 8318,                                                                                        // MUST be defined.
     height: 3640,                                                                                       // MUST be defined.
     tolerance: 0.9, 

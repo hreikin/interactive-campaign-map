@@ -1,3 +1,8 @@
+---
+layout: page
+title: README
+permalink: /readme/
+---
 # Interactive Campaign Map
 The Interactive Campaign Map is designed to let campaign arbitrators and GM's create an interactive map for use in their tabletop or roleplaying games.
 
@@ -24,10 +29,10 @@ The interactive campaign map repository contains a few files and folders which i
 - Zoomify tile source. Zoomify Free is available from [here](http://www.zoomify.com/free.htm).
 
 ## Demo
-A fullscreen demo is available to view [here](https://hreikin.co.uk/interactive-campaign-map/interactive-campaign-map.html).
+A fullscreen demo is available to view [here](https://interactive-campaign-map.hreikin.co.uk/interactive-campaign-map.html).
 
 ## Basic Usage
-A detailed guide is available to view [here](https://www.hreikin.co.uk/2018/06/07/user-guide-how-to-create-an-interactive-campaign-map-with-leafletjs/). Full documentation is available in the ```docs``` folder of this repository.
+A detailed guide is available to view [here](https://www.interactive-campaign-map.hreikin.co.uk/user-guide/). Full documentation is available in the ```docs``` folder of this repository.
 
 Create the map and set a flat projection, as we are projecting an image. Then create the Zoomify tile layer.
 ```js
@@ -37,7 +42,7 @@ var map = L.map('mapid', {
 });
 
 //Change the URL to reflect where you are hosting your map tiles. Width and Height of original image MUST be defined.
-var layer = L.tileLayer.zoomify('./interactive-campaign-map-start/{g}/{z}-{x}-{y}.jpg', {
+var layer = L.tileLayer.zoomify('/interactive-campaign-map-start/{g}/{z}-{x}-{y}.jpg', {
     width: 8318,    // MUST be defined.
     height: 3640,   // MUST be defined.
 }).addTo(map);
@@ -50,13 +55,13 @@ Declare which icons to use for the Player and Battle markers.
 ```js
 // Create the icon used for the player markers. May be changed to any image you wish.
 var playerIcon = L.icon({
-    iconUrl: 'images/players.png',  // Location of file to be used as icon.
+    iconUrl: '/images/players.png',  // Location of file to be used as icon.
     iconSize: [38, 38],             // Size of icon on map.
 });
 
 // Create the icon used for the battle markers. May be changed to any image you wish.
 var battleIcon = L.icon({
-    iconUrl: 'images/battles.png',  // Location of file to be used as icon.
+    iconUrl: '/images/battles.png',  // Location of file to be used as icon.
     iconSize: [50, 50],             // Size of icon on map.
 });
 ```
@@ -164,7 +169,7 @@ var battlesStage02 = L.layerGroup([redPlayerStage02Battle01, lightGreenPlayerSta
 Create the switchable map layers and add them to the map. Width and Height of original image MUST be defined.
 ```js
 //Creates the switchable map layers. Change the URL to reflect where you are hosting your map tiles. Width and Height of original image MUST be defined.
-var start = L.tileLayer.zoomify('./interactive-campaign-map-start/{g}/{z}-{x}-{y}.jpg', {
+var start = L.tileLayer.zoomify('/interactive-campaign-map-start/{g}/{z}-{x}-{y}.jpg', {
     width: 8318,                                                                                        // MUST be defined.
     height: 3640,                                                                                       // MUST be defined.
     tolerance: 0.9, 
@@ -172,7 +177,7 @@ var start = L.tileLayer.zoomify('./interactive-campaign-map-start/{g}/{z}-{x}-{y
     attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Attribution which appears in the bottom left corner, change this value to whatever you like.
     }).addTo(map),
 
-    stage01 = L.tileLayer.zoomify('./interactive-campaign-map-stage-01/{g}/{z}-{x}-{y}.jpg', {
+    stage01 = L.tileLayer.zoomify('/interactive-campaign-map-stage-01/{g}/{z}-{x}-{y}.jpg', {
     width: 8318,                                                                                        // MUST be defined.
     height: 3640,                                                                                       // MUST be defined.
     tolerance: 0.9, 
@@ -180,7 +185,7 @@ var start = L.tileLayer.zoomify('./interactive-campaign-map-start/{g}/{z}-{x}-{y
     attribution: 'Map by <a href="https://hreikin.co.uk" target="_blank" alt="hreikin">@hreikin</a>'    // Attribution which appears in the bottom left corner, change this value to whatever you like.
     }),
 
-    stage02 = L.tileLayer.zoomify('./interactive-campaign-map-stage-02/{g}/{z}-{x}-{y}.jpg', {
+    stage02 = L.tileLayer.zoomify('/interactive-campaign-map-stage-02/{g}/{z}-{x}-{y}.jpg', {
     width: 8318,                                                                                        // MUST be defined.
     height: 3640,                                                                                       // MUST be defined.
     tolerance: 0.9, 
